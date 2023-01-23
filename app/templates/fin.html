@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block fin %}
+
+<H1 align="center">Felicitaciones!!! Juego finalizado.</H1>
+<br/>
+<br/>
+
+<H2 align="center">Tu tiempo fue de (hh:mm:ss): </H2>
+<H1 style="color: #900C3F;" align="center"> {{ resultado }}</H1>
+
+{#   <H1 align="center">Tu tiempo fue de: {{ resultado }} (hh:mm:ss)</H1>  #}
+
+<br/>
+<br/>
+<a href="/trivia/categorias">Iniciar nuevo juego</a>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block categorias %}
+
+    {% for post in posts %}
+
+        {% for estado in estados %}
+            {% if post.key == estado.key %}
+              {#    este es un comentario    <div style="color:green;"><p> <b>{{ estado.valor }} ---</b></p></div> #}
+                {% if estado.valor %}
+                    <div style="color:green;"><p><b>{{ post.value }}</b></p></div>
+                {% else %}
+                    <div><p><a href={{ post.key }}/pregunta>{{ post.value }}</a></p></div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+
+    {% endfor %}
+{% endblock %}
+
+

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        {% if title %}
+            <title>{{ title }} - Trivia Quiz</title>
+        {% else %}
+            <title>Welcome to Trivia Quiz</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>TRIVIA QUIZ: <a href="/trivia">Home</a>
+            <IMG align="right" src="https://www.teachersfirst.com/content/knowyou/triviaquiz.png" alt="trivia texto">
+        </div>
+
+        <hr>
+        {% block content %}{% endblock %}
+        {% block categorias %}{% endblock %}
+        {% block pregunta %}{% endblock %}
+        {% block resultado %}{% endblock %}
+        {% block fin %}{% endblock %}
+        {% block error %}{% endblock %}
+        {% block no_data %}{% endblock %}
+    </body>
+</html>

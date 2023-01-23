@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block resultado %}
+
+{% if resultado == 0 %}
+    <H1 style="color:green;" align="center"> Respuesta correcta </H1>
+{% else %}
+    {% if resultado == 1 %}
+        <H1 style="color:red;" align="center"> Respuesta incorrecta </H1>
+    {% else %}
+            <H1 align="center"> Respuesta inválida </H1>
+    {% endif %}
+{% endif %}
+
+
+<br/>
+<br/>
+
+{% if pendientes %}
+    <a href="/trivia/categorias">Volver a categorias</a>
+{% else %}
+    <a href="/trivia/fin">Ver tiempo insumido</a>
+{% endif %}
+
+{% endblock %}

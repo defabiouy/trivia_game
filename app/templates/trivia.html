@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for post in posts %}
+        <div><p><b>{{ post.titulo }}</b> {{ post.texto }}</p></div>
+    {% endfor %}
+
+<br/>
+<br/>
+    <H1 align="center"> <a href="/trivia/categorias">Iniciar nuevo juego</a> </H1>
+{% endblock %}

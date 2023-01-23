@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block pregunta %}
+
+<div><p><b>{{ pregunta.texto }}</b></p></div>
+
+{% for respuesta in respuestas %}
+    <div><p><a href={{ pregunta.nro }}/resultado/{{ respuesta.key }}>{{ respuesta.value }}</a></p></div>
+{% endfor %}
+
+<br/>
+<br/>
+<a href="/trivia/categorias">Volver a categorias</a>
+{% endblock %}
