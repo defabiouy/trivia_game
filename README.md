@@ -14,6 +14,7 @@ Para levantar flask, en una consola ejecutar:
     export FLASK_ENV=development
     python3 -m flask run
 
+Para comenzar a jugar, en el navegador ir a: http://127.0.0.1:5000/ o http://127.0.0.1:5000/trivia
 
 # Pendientes/mejoras:
 - Debido a problemas con las funciones provistas por datetime, el formateo del tiempo (para mostrar el tiempo insumido por el jugador) se hizo artesanalmente.
